@@ -1,39 +1,89 @@
-/* Variables CSS pour une gestion cohérente des couleurs et des polices */
-:root {
-    --bg-color: #2c3e50; /* Couleur d'arrière-plan */
-    --text-color: #ecf0f1; /* Couleur du texte */
-    --accent-color: #e1b12c; /* Couleur d'accent */
-    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police de caractères */
-}
-
-body {
+/* Reset some basic elements */
+body, h1, h2, h3, p, a {
     margin: 0;
-    font-family: var(--font-family);
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-header.hero {
+/* Style for the header */
+header {
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 4rem 0;
-}
-
-section {
     padding: 2rem 0;
 }
 
-/* Ajoutez des styles pour les animations, les transitions, les effets de survol, etc. */
-
-/* Media queries pour la réactivité */
-@media (max-width: 768px) {
-    /* Styles pour tablettes et mobiles */
+/* Profile image style */
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
-@media (max-width: 480px) {
-    /* Styles pour mobiles */
+/* Main content section styles */
+section {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Contact info styles */
+.contact-info {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-info a {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Education section styles */
+.education {
+    background-color: #e7e7e7;
+}
+
+/* Language skills styles */
+.languages {
+    background-color: #e7e7e7;
+}
+
+/* Professional experience styles */
+.professional-experience article {
+    background-color: #e7e7e7;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Academic projects styles */
+.academic-projects article {
+    background-color: #e7e7e7;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Competence section styles */
+.competences {
+    background-color: #e7e7e7;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header, .contact-info, .education, .languages, .skills, .professional-experience, .academic-projects, .competences, footer {
+        padding: 10px;
+    }
 }
