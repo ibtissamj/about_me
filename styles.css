@@ -1,105 +1,39 @@
-/* Structure de base */
-body, html {
-    height: 100%;
+/* Variables CSS pour une gestion cohérente des couleurs et des polices */
+:root {
+    --bg-color: #2c3e50; /* Couleur d'arrière-plan */
+    --text-color: #ecf0f1; /* Couleur du texte */
+    --accent-color: #e1b12c; /* Couleur d'accent */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police de caractères */
+}
+
+body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f0f0f0;
-  }
-  
-  /* En-tête avec effet de parallaxe */
-  .parallax {
-    /* L'image utilisée */
-    background-image: url('cybersecurity-background.jpg');
-  
-    /* Définir une hauteur spécifique */
-    min-height: 500px; 
-  
-    /* Créer l'effet parallax scrolling */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  /* Section À propos de moi */
-  .about-me {
-    background-color: #ffffff;
-    color: #333333;
-    padding: 100px 40px;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header.hero {
     text-align: center;
-  }
-  
-  /* Animation de battement de cœur pour les icônes de compétences */
-  @keyframes heartbeat {
-    0% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(1.1);
-      opacity: 0.7;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  
-  .skill-icon {
-    animation: heartbeat 2s infinite;
-    display: inline-block;
-    margin: 10px;
-    font-size: 40px;
-    color: #ff6363;
-  }
-  
-  /* Barres de compétences avec animation */
-  .skill-bar {
-    position: relative;
-    width: 90%;
-    height: 30px;
-    background-color: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 10px auto;
-  }
-  
-  .skill-bar-fill {
-    display: block;
-    height: 100%;
-    background-color: #22aaff;
-    width: 0;
-    border-radius: 5px;
-  }
-  
-  .skill-bar-fill span {
-    position: absolute;
-    left: 10px;
-    line-height: 30px;
-    color: white;
-  }
-  
-  /* Animer les barres de compétence lors du survol */
-  .skill-bar:hover .skill-bar-fill {
-    width: 90%; /* Modifier selon la compétence */
-    transition: width 2s;
-  }
-  
-  /* Pied de page */
-  footer {
-    background-color: #333333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  /* Adaptations pour les petits écrans */
-  @media only screen and (max-width: 768px) {
-    .parallax, .about-me, footer {
-      padding: 50px 20px;
-    }
-  }
-  
+    padding: 4rem 0;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+/* Ajoutez des styles pour les animations, les transitions, les effets de survol, etc. */
+
+/* Media queries pour la réactivité */
+@media (max-width: 768px) {
+    /* Styles pour tablettes et mobiles */
+}
+
+@media (max-width: 480px) {
+    /* Styles pour mobiles */
+}
