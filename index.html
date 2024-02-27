@@ -1,31 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ibtissam Jennate - Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { width: 80%; margin: auto; overflow: hidden; }
+        header { background: #333; color: #fff; padding: 20px; text-align: center; }
+        header h1 { margin: 0; }
+        nav { background: #555; color: #fff; padding: 15px; text-align: center; }
+        nav a { color: #fff; text-decoration: none; margin: 0 10px; }
+        nav a:hover { text-decoration: underline; }
+        .about, .education, .experience, .projects, .skills { padding: 20px; }
+        .about img { float: left; margin-right: 20px; border-radius: 50%; }
+        @media (max-width: 600px) {
+            .about img { display: block; float: none; margin: auto; }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Mon Site Web</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Ibtissam Jennate</h1>
+        <p>Élève Ingénieur en Recherche de Stage</p>
     </header>
-    <main>
-        <section>
-            <h2>Bienvenue sur mon site web</h2>
-            <p>C'est un exemple de site web simple.</p>
+    
+    <nav>
+        <a href="#about">À Propos</a>
+        <a href="#education">Éducation</a>
+        <a href="#experience">Expérience</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <img src="path_to_your_image.jpg" alt="Ibtissam Jennate">
+            <h2>Profil</h2>
+            <p>Actuellement en 4ème année d'ingénierie en Sécurité et Technologies Informatiques à l'INSA...</p>
+            <!-- Ajoutez le reste de votre section de profil ici -->
         </section>
-    </main>
+        
+        <section id="education" class="education">
+            <h2>Éducation</h2>
+            <p>INSA Centre Val de Loire, Formation ingénieur en Sécurité et Technologies Informatiques...</p>
+            <!-- Ajoutez le reste de votre section éducation ici -->
+        </section>
+        
+        <section id="experience" class="experience">
+            <h2>Expérience Professionnelle</h2>
+            <p>Stage chez Maroc, El Jadida, Maroc...</p>
+            <!-- Ajoutez le reste de vos expériences professionnelles ici -->
+        </section>
+        
+        <section id="projects" class="projects">
+            <h2>Projets</h2>
+            <p>Gestion Étudiants (Java) : Application JavaFX avec BDD...</p>
+            <!-- Ajoutez le reste de vos projets ici -->
+        </section>
+        
+        <section id="skills" class="skills">
+            <h2>Compétences</h2>
+            <p>Langages : C, Java, Python...</p>
+            <!-- Ajoutez le reste de vos compétences ici -->
+        </section>
+    </div>
+    
     <footer>
-        <p>&copy; 2024 Mon Site Web</p>
+        <p>Contact: +33 7 33 34 94 68 | ibtissam.jennat@insa-cvl.fr</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
